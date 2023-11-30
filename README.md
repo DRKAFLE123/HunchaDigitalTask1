@@ -8,8 +8,10 @@ A simple backend application using a server-side framework (Django)
 To run this application, you will need to have the following installed:
 
 * Python 
-* Django 
-* SQLite 
+* pip install Django after creating virtual environment
+* pip install djangorestframework
+* SQLite
+  
 ## Installation
 
 1. Clone the repository:
