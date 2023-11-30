@@ -13,5 +13,6 @@ To run this application, you will need to have the following installed:
 ## Installation
 
 1. Clone the repository:
+   
    - In terminal of vscode
-* git clone <repository_url>
+* command- git clone <repository_url>
