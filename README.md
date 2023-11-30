@@ -33,7 +33,7 @@ To run this application, you will need to have the following installed:
 * python manage.py migrate
 
 5. Run the development server:
-  -  Terminal
+  - Terminal
 * python manage.py runserver
 
 
