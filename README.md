@@ -32,6 +32,10 @@ To run this application, you will need to have the following installed:
 * python manage.py makemigrations
 * python manage.py migrate
 
+5. Run the development server:
+  - Terminal
+* python manage.py runserver
+
 
 
 
