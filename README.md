@@ -14,4 +14,4 @@ To run this application, you will need to have the following installed:
 
 1. Clone the repository:
    - In terminal of vscode
-git clone <repository_url>
+* git clone <repository_url>
