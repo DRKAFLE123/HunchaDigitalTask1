@@ -17,6 +17,12 @@ To run this application, you will need to have the following installed:
    - In terminal of vscode
 * command-> git clone <repository_url>
 
+2. Create a virtual environment and activate it:
+   Terminal
+cd <project_directory>
+python3 -m venv venv
+source venv/bin/activate
+
 
 
 
