@@ -23,6 +23,15 @@ To run this application, you will need to have the following installed:
 * python3 -m venv venv
 * source venv/bin/activate
 
+3. Install the required dependencies:
+   -  Terminal
+* pip install -r requirements.txt
+
+4. Create the database schema:
+   - Terminal
+* python manage.py makemigrations
+* python manage.py migrate
+
 
 
 
