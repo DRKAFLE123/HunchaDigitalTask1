@@ -18,7 +18,7 @@ To run this application, you will need to have the following installed:
 * command-> git clone <repository_url>
 
 2. Create a virtual environment and activate it:
-   Terminal
+   - Terminal
 cd <project_directory>
 python3 -m venv venv
 source venv/bin/activate
