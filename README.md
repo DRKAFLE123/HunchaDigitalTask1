@@ -1,6 +1,6 @@
 # HunchaDigitalTask1
 A simple backend TODO application using a server-side framework (Django)
-- Backend using django framework with SQlLite and CRUD operation
+- Backend using django framework with SQlLite and focuses on  CRUD operation
 - This project provides a RESTful API for managing tasks using Django and SQLite.
 
 ## Prerequisites
