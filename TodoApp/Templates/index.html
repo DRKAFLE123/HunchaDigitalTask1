@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+</head>
+<body style="text-align: center;">
+   
+      </div>
+      
+
+<!-- New task form start -->
+
+<div>  
+
+
+    <h1>Create a New Task</h1>
+    {% block content %}
+    <form method="post" action="/api/create-task/">
+        {% csrf_token %}
+        <label for="task_name">Task Name:</label>
+        <input type="text" name="task_name" id="task_name">
+      
+       
+        <label for="priority">Priority:</label>
+        <select name="priority" id="priority">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <label for="status">Status:</label>
+        <select name="status" id="status">
+            <option value="True">Completed</option>
+            <option value="False">Pending</option>
+        </select>
+<br>
+        <br>
+        <input type="submit" value="Add Task">
+    </form>
+
+</div>
+{% endblock %}
+<div >
+    <br>
+    <h1>Task Table</h1>
+    <table style="margin-left: auto; margin-right: auto; margin-top: 20px; align-content: center; box-shadow: 1px 1px 2px 0px;">
+    <thead>
+        <tr>
+        <th>SN</th>
+        <th>Tasks</th>
+        <th>Priority</th>
+        <th>Completed</th>
+    </tr>
+    </thead>
+    <tbody>
+       {% for task in tasks %} 
+            <tr>
+             <td>{{forloop.counter}}</td>
+            <td>{{task}}</td>
+             <td>{{task.priority}}</td> 
+             <td>{{task.completed}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<!-- table of task ended -->
+</div>
+
+</body>
+</html>

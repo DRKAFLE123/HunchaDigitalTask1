@@ -1,0 +1,41 @@
+{% block content %}
+<div>
+    <h1>Update Task</h1>
+
+    <form method="post" >
+        {% csrf_token %}
+        <label for="task_name">Task Name:</label>
+        <input type="text" name="task_name" id="task_name" value="{{ task.task_name }}">
+        <br>
+
+        <label for="priority">Priority:</label>
+        <select name="priority" id="priority">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <br>
+
+        <label for="status">Status:</label>
+
+        
+<select name="status" id="status">
+
+            
+<option value="False">Pending</option>
+
+<option value="True">Completed</option>
+
+        
+</select>
+
+        
+<br>
+<input type="submit" value="Update Task">
+</form>
+</div>
+
+{% endblock %}
