@@ -7,7 +7,7 @@ from .views import *
   # The first set of URL patterns utilizes Django's generic class-based views (CBVs) for handling CRUD operations.
   # The second set of URL patterns employs Django's traditional function-based views (FBVs) for managing CRUD operations.
 urlpatterns = [
-    path('<int:pk>/', DetailTodo.as_view()),  #link to update
+    path('update/<int:pk>/', DetailTodo.as_view()),  #link to update
     path('', ListTodo.as_view()),     #LINK TO READ 
     path('create', CreateTodo.as_view()),  #Link to create
     path('delete/<int:pk>', DeleteTodo.as_view()),  #link to delete
