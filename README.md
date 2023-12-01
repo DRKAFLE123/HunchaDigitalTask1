@@ -26,46 +26,44 @@ To run this application, you will need to have the following installed:
 * source venv/bin/activate
 
 3. Install the required dependencies:
-   -  Terminal
+   - In Terminal
 * pip install -r requirements.txt
 
 4. Create the database schema:
-   - Terminal
+   - IN Terminal
 * python manage.py makemigrations
 * python manage.py migrate
 
 5. Run the development server:
--  Terminal
+-  IN Terminal
 * python manage.py runserver
 
 
 ## The application will be running on http://localhost:8000.
 
 # API Documentation
-Task List
-Endpoint: /tasks
-Method: GET
-Description: Retrieves a list of all tasks.
-Create Task
-Endpoint: /tasks
+
+# Create Task
+Endpoint: /create
 Method: POST
 Request Data:
 title: The title of the task (required)
 status: The status of the task (optional, defaults to "pending")
 Description: Creates a new task.
-Get Task
-Endpoint: /tasks/<task_id>
+
+# Get Task
+Endpoint: ' '
 Method: GET
 Description: Retrieves a specific task with the given ID.
-Update Task
-Endpoint: /tasks/<task_id>
+
+# Update Task
+Endpoint: /update/<int:pk>/
 Method: PUT
 Request Data:
-title: The updated title of the task (required)
-status: The updated status of the task (optional)
 Description: Updates the specified task.
-Delete Task
-Endpoint: /tasks/<task_id>
+
+# Delete Task
+Endpoint: /delete/<task_id>
 Method: DELETE
 Description: Deletes the specified task.
 
